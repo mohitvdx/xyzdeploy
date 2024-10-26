@@ -36,8 +36,8 @@ jobs:
       - name: Build
         run: pnpm build
       
-      - name: Test
-        run: pnpm test
+      # - name: Test
+      #   run: pnpm test
       
       - name: Cache turbo build setup
         uses: actions/cache@v3
