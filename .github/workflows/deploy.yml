@@ -27,7 +27,7 @@ jobs:
         push: true
         tags: mohitvermaexe/xyz:latest
         build-args: |
-          ARG1=${{ secrets.ARG1 }}
+          DATABASE_URL=${{ secrets.DATABASE_URL }}
 
     - name: Verify Pushed Image
       run: docker pull mohitvermaexe/xyz:latest
