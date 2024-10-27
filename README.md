@@ -30,3 +30,29 @@ docker run -d --name xyz-app-container -p 3000:3000 mohitvermaexe/xyz
 docker push mohitvermaexe/xyz:latest
 ```
 Remember to replace `xyz` with your Docker image name in the above commands.
+### Accessing the Postgres Database using psql
+
+1. **Install psql**: Use the following command to install psql:
+    ```sh
+    brew install psql
+    ```
+
+2. **Access the Database**: Use the following command to access the database:
+    ```sh
+    psql "yourconnectionstring"
+    ```
+
+3. **View Tables**:
+    - To see all tables, use:
+        ```sh
+        \dt
+        ```
+    - To see all tables with their data, use:
+        ```sh
+        \dt+
+        ```
+
+4. **View Data of a Particular Table**: Use the following SQL command to see data of a particular table:
+    ```sql
+    SELECT * FROM "table_name";
+    ```
