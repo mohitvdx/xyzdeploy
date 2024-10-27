@@ -39,9 +39,9 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }} 
         username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          sudo docker pullmohitvermaexe/xyz:latest
+          sudo docker pull mohitvermaexe/xyz:latest
           sudo docker stop xyz-container-ec2 || true
           sudo docker rm xyz-container-ec2 || true
           sudo docker run -d --name xyz-container-ec2 -p 3000:3000 mohitvermaexe/xyz:latest
