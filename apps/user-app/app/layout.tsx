@@ -1,4 +1,5 @@
 import "./globals.css";
+import * as React from 'react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "../provider";
@@ -11,8 +12,8 @@ const client = new Client();
 client.setProject('672119f7002e6aa196a5');
 
 export const metadata: Metadata = {
-  title: "Wallet",
-  description: "Simple wallet app",
+  title: "CampusVoices",
+  description: "whats going on in campus",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
       <Providers>
         <body className={inter.className}>
           <div className="min-w-screen min-h-screen bg-[#ebe6e6]">
-            <AppbarClient />
+            {/* <AppbarClient /> */}
             {children}
           </div>
         </body>

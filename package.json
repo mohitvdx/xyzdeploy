@@ -24,6 +24,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@shadcn/ui": "^0.0.4",
     "appwrite": "^16.0.2"
   }
 }
