@@ -27,6 +27,7 @@
   "dependencies": {
     "@prisma/client": "^5.22.0",
     "@shadcn/ui": "^0.0.4",
-    "appwrite": "^16.0.2"
+    "appwrite": "^16.0.2",
+    "tsx": "^4.19.2"
   }
 }
